@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-p-around_large">
+    <lightning-input placeholder="Enter booking name" onkeyup={change}></lightning-input>
+    </div>
+        <lightning-datatable key-field="id" data={wiredResult} columns={cols}> </lightning-datatable>
+        <lightning-button label="previous" variant="brand" disabled={showp} onclick={handleprev}></lightning-button>
+        <lightning-button label="next" variant="success" disabled={shown} onclick={handlenext}></lightning-button>
+</template>
